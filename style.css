@@ -1,0 +1,153 @@
+/* Variáveis de Cores */
+
+:root {
+    --cor0: #fff;
+    --cor1: #ffffffcc;
+    --cor2: #000000;
+    --cor3: #000000cc;
+    --cor4: #0200006e;
+    --cor5: #ffdf00;
+    --cor6: #009c3b;
+}
+
+/* Configurações Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau Infant", sans-serif;
+}
+
+/* Seção Banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-info {
+    width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.imgPerfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    background-image: url("assets/neymar.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPerfil::before {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.container-perfil h1 {
+    font-size: 50px;
+    color: white;
+
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 3px 6px 1px #000000;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--cor5), var(--cor6));
+    bottom: 45px;
+    left: 5px;
+    border-radius: 4px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    right: -20px;
+    background-image: url("assets/verificado.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.container-links a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 30px;
+    background-color: var(--cor4);
+    text-decoration: none;
+    color: white;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-links a:hover {
+    background-color: white;
+    color: black;
+}
+
+.container-links a p {
+    width: 90%;
+}
+
+.container-links a img {
+    width: 30px;
+}
