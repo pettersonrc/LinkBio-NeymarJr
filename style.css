@@ -38,6 +38,8 @@
     object-fit: cover;
 }
 
+/* Estilização Perfil */
+
 .container-info {
     width: 768px;
 
@@ -95,7 +97,7 @@ h1::before {
     width: 55px;
     height: 5px;
     background: linear-gradient(90deg, var(--cor5), var(--cor6));
-    bottom: 45px;
+    bottom: 43px;
     left: 5px;
     border-radius: 4px;
 }
@@ -104,7 +106,6 @@ h1::after {
     content: "";
     position: absolute;
     bottom: 50px;
-    right: -20px;
     background-image: url("assets/verificado.png");
     background-position: center;
     background-size: cover;
@@ -112,6 +113,8 @@ h1::after {
     width: 20px;
     height: 20px;
 }
+
+/* Estilização Links */
 
 .container-links {
     display: flex;
@@ -150,4 +153,58 @@ h1::after {
 
 .container-links a img {
     width: 30px;
+}
+
+/* Seção Estatísticas */
+
+.estatisticas {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("assets/imagem-de-fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.estatisticas h2 {
+    font-size: 50px;
+    color: white;
+
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 3px 6px 1px #000000;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    color: white;
+    font-size: 20px;
+    background-color: var(--cor3);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--cor1);
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor3);
+    color: white;
+}
+
+tr img {
+    width: 20px;
 }
